@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eine detaillierte Erklärung von Void-Methoden in Java mit Beispielen und Best Practices.">
+    <title>Java Void-Methoden: Detaillierte Erklärung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java Void-Methoden: Detaillierte Erklärung</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Was sind Void-Methoden?</h2>
+            <p>Void-Methoden sind Methoden in Java, die keine Werte zurückgeben. Der Rückgabetyp dieser Methoden ist <code>void</code>, was bedeutet, dass die Methode nur eine Aktion ausführt und keinen Rückgabewert hat.</p>
+        </section>
+
+        <section>
+            <h2>Syntax einer Void-Methode</h2>
+            <pre><code>public void methodenName(Parameterliste) {
+    // Codeblock
+}</code></pre>
+            <p><strong>Beispiel:</strong> Eine Methode, die eine Nachricht ausgibt:</p>
+            <pre><code>public void druckeNachricht() {
+    System.out.println("Das ist eine Void-Methode!");
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Typische Anwendungen von Void-Methoden</h2>
+            <ul>
+                <li><strong>Ausgabe von Daten:</strong> Zum Beispiel, um eine Nachricht auf der Konsole auszugeben.</li>
+                <li><strong>Änderung des Zustands eines Objekts:</strong> Void-Methoden können den Zustand eines Objekts verändern, ohne einen Wert zurückzugeben.</li>
+                <li><strong>Ausführung von Prozessen:</strong> Methoden, die eine Folge von Aktionen ausführen, wie das Initialisieren von Daten.</li>
+            </ul>
+
+            <h3>Beispiel: Zustand eines Objekts ändern</h3>
+            <pre><code>public class Konto {
+    private double saldo;
+
+    public void einzahlen(double betrag) {
+        if (betrag > 0) {
+            saldo += betrag;
+            System.out.println("Betrag erfolgreich eingezahlt. Neuer Saldo: " + saldo);
+        } else {
+            System.out.println("Ungültiger Betrag.");
+        }
+    }
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Best Practices für Void-Methoden</h2>
+            <ul>
+                <li><strong>Klarheit des Methodennamens:</strong> Der Name der Methode sollte deutlich machen, welche Aktion sie ausführt, z. B. <code>druckeBericht</code> oder <code>aktualisiereStatus</code>.</li>
+                <li><strong>Vermeidung von Seiteneffekten:</strong> Achten Sie darauf, dass die Methode keine unerwarteten Änderungen an Daten oder Objekten vornimmt.</li>
+                <li><strong>Dokumentation:</strong> Fügen Sie Kommentare hinzu, um zu erklären, welche Aufgabe die Methode erfüllt.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Vergleich: Void-Methoden und Methoden mit Rückgabewert</h2>
+            <table border="1" style="width:100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>Void-Methoden</th>
+                        <th>Methoden mit Rückgabewert</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Geben keinen Wert zurück.</td>
+                        <td>Geben einen spezifischen Wert zurück (z. B. <code>int</code>, <code>String</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>Führen hauptsächlich Aktionen aus.</td>
+                        <td>Berechnen oder liefern Ergebnisse.</td>
+                    </tr>
+                    <tr>
+                        <td>Verwendet <code>void</code> als Rückgabetyp.</td>
+                        <td>Der Rückgabetyp entspricht dem Datentyp des Ergebnisses.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Java-Guide. Alle Rechte vorbehalten.</p>
+            <p><a href="index.html">Zurück zur Hauptseite</a></p>
+        </footer>
+    </main>
+</body>
+</html>
