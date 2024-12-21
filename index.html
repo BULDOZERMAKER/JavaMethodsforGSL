@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eine umfassende Anleitung zu Java-Methoden mit Erklärungen, Beispielen und Umsetzung in Pseudocode.">
+    <title>Java-Methoden: Eine vollständige Anleitung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java-Methoden: Eine vollständige Anleitung</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Einführung in Java-Methoden</h2>
+            <p>Methoden in Java sind wiederverwendbare Codeblöcke, die eine bestimmte Aufgabe ausführen. Sie helfen dabei, Programme modular und leserlich zu gestalten.</p>
+        </section>
+
+        <section>
+            <h2>Grundlagen der Methoden</h2>
+            <h3>Struktur einer Methode</h3>
+            <p>Eine Methode in Java besteht aus folgenden Bestandteilen:</p>
+            <ul>
+                <li><strong>Rückgabetyp:</strong> Gibt an, welchen Datentyp die Methode zurückgibt (z. B. <code>int</code>, <code>void</code>).</li>
+                <li><strong>Name der Methode:</strong> Der Bezeichner, mit dem die Methode aufgerufen wird.</li>
+                <li><strong>Parameter:</strong> Werte, die an die Methode übergeben werden.</li>
+                <li><strong>Methodenkörper:</strong> Der Code, der ausgeführt wird, wenn die Methode aufgerufen wird.</li>
+            </ul>
+            <h3>Beispiel einer einfachen Methode</h3>
+            <pre><code>// Methode zur Berechnung der Summe von zwei Zahlen
+public int addiere(int a, int b) {
+    return a + b;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Arten von Methoden</h2>
+            <h3>1. Void-Methoden</h3>
+            <p>Führen eine Aktion aus, geben aber keinen Wert zurück.</p>
+            <pre><code>public void druckeNachricht() {
+    System.out.println("Hallo, Welt!");
+}</code></pre>
+
+            <h3>2. Methoden mit Rückgabewert</h3>
+            <p>Geben ein Ergebnis zurück.</p>
+            <pre><code>public int quadriere(int zahl) {
+    return zahl * zahl;
+}</code></pre>
+
+            <h3>3. Statische Methoden</h3>
+            <p>Können ohne ein Objekt der Klasse aufgerufen werden.</p>
+            <pre><code>public static double berechneKreisfläche(double radius) {
+    return Math.PI * radius * radius;
+}</code></pre>
+
+            <h3>4. Instanzmethoden</h3>
+            <p>Benötigen ein Objekt der Klasse, um aufgerufen zu werden.</p>
+            <pre><code>public String gibName() {
+    return this.name;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Methoden in Pseudocode</h2>
+            <p>In Pseudocode lassen sich Methoden ähnlich wie in Java darstellen. Der Unterschied liegt in der vereinfachten Notation.</p>
+            <h3>Beispiel:</h3>
+            <pre><code>Funktion Addiere(a, b)
+    Rückgabe a + b
+Ende Funktion</code></pre>
+
+            <h3>Komplette Anwendung in Pseudocode:</h3>
+            <pre><code>Prozedur Main()
+    Zahl1 ← 5
+    Zahl2 ← 10
+    Ergebnis ← Addiere(Zahl1, Zahl2)
+    Ausgabe "Die Summe ist: " + Ergebnis
+Ende Prozedur
+
+Funktion Addiere(a, b)
+    Rückgabe a + b
+Ende Funktion</code></pre>
+        </section>
+
+        <section>
+            <h2>Best Practices für Methoden</h2>
+            <ul>
+                <li><strong>Verwende beschreibende Namen:</strong> Namen wie <code>berechneSumme</code> sind aussagekräftiger als <code>methode1</code>.</li>
+                <li><strong>Vermeide zu viele Parameter:</strong> Nutze Objekte, um Daten zu bündeln.</li>
+                <li><strong>Modularisierung:</strong> Teile den Code in kleine, spezifische Methoden auf.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Zusammenhang zwischen Java und Pseudocode</h2>
+            <p>Pseudocode dient als Planungshilfe vor der eigentlichen Implementierung in Java. Er erleichtert das Verständnis der Logik, bevor syntaktische Details hinzugefügt werden.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Java-Guide. Alle Rechte vorbehalten.</p>
+        </footer>
+    </main>
+</body>
+</html>
