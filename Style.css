@@ -1,0 +1,91 @@
+body {
+  background-color: lightblue;
+  margin: 1000;
+  height: 100vh;  /* Stellt sicher, dass die Seite die gesamte Höhe des Viewports einnimmt */
+  display: flex;
+  flex-direction: column;   /* Zentriert den Inhalt horizontal */
+  justify-content: flex-start; /* Verhindert, dass der Inhalt ganz unten landet */
+}
+
+.head{
+  font-size: 70px;
+  background-color: lightgreen;
+
+}
+
+.text {
+  color: black;
+  text-align: center;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Passe dies an, um das Bild nach deinen Vorstellungen zu skalieren */
+}
+
+#smtext {
+  color: black;
+  text-align: center;
+  font-size: 160%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ueberschrift {
+  padding-top: 20px; /* Etwas Abstand nach oben */
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.img {
+  float: left;
+  padding-top: 60px; /* Bild wird hier weiter unten platziert, wenn du das möchtest */
+  width: 20%; /* Optional: Passt das Bild dynamisch an */
+}
+
+.nimg{
+  align-items: center;
+  float: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 30px;
+}
+
+.size{
+  background-color: lightgreen;
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.size_sm{
+  background-color: gray;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.week{
+  background-color: lightblue;
+}
+
+.weekend{
+  background-color: orange;
+  width:6%;
+}
+
+.normal{
+  background-color: lightblue;
+}
+
+.center_text{
+  text-align: center;
+}
